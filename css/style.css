@@ -46,12 +46,10 @@ nav ul.menu li:last-child {
 }
 header{
     position: fixed;
-    top: 8%;
+    top:0;
     width: 100%;
     transition: all 0.3s;
     z-index: 99;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 .change{
     background-color: #fff;
@@ -69,11 +67,11 @@ header{
 }
 /* mobile */
 .photos-type{
+    background-color: var(--lighter-color);
     transform: scale(0);
     transition: transform .3s;
     position: absolute;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 8px;
     line-height: 60px;
 }
 .photo:hover > .photos-type{
@@ -82,7 +80,6 @@ header{
 .photos-type ul li{
     width: 100%;
     padding: 8px 32px;
-    border-radius: 8px;
     cursor: pointer;
 }
 .photos-type ul li:hover{
@@ -108,7 +105,7 @@ main{
     margin: 50px auto;
 }
 section{
-    margin: 50px 0;
+    margin: 100px 0;
 }
 .flex-50{
     display: flex;
@@ -122,7 +119,8 @@ section{
 }
 .flex-50 .img-holder{
     height: 500px;
-    width: 100%;
+    width: 700px;
+    max-width: 100%;
 }
 .flex-50 .img-holder img{
     position: absolute;
@@ -130,8 +128,50 @@ section{
     height: 100%;
     object-fit: cover;
 }
-.quotes{
-    
+/* contact */
+.contact-text-holder{
+    line-height: 80px;
+    width: 900px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+.contact-text-holder > *{
+    margin-top: 30px;
+}
+.contact{
+    padding: 50px 30px;
+    background-color: #D0D4CA;
+    width: 100%;
+}
+.contact-text-holder button{
+    line-height:initial;
+    font-weight: bold;
+    padding: 15px 24px;
+    background-color: var(--lighter-color);
+    transition: all .4s;
+}
+.contact-text-holder button:hover{
+    background-color: var(--darker-color);
+    border: 1px solid var(--lighter-color);
+    color: var(--lighter-color);
+}
+/* tablet */
+@media only screen and (min-width:768px) {
+    .flex-50{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+/* Desktop */
+@media only screen and (min-width:1024px) {
+    .banner{
+        background: url('../image/banner.png');
+        height: 100vh;
+        width: 100% !important;
+        background-size: cover;
+        background-position:top center;
+        background-repeat: no-repeat;
+    }
 }
 /* mobile menu nav */
 @media only screen and (max-width:800px){
@@ -139,6 +179,7 @@ section{
         display: none;
     }
     .mobile-header{
+        padding-top: 40px;
         display: block;
         position: fixed;
         top: 0;
