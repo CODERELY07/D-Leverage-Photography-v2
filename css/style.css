@@ -8,7 +8,7 @@
 :root{
     --ligth-color: #E8E9ED;
     --lighter-color:#fff;
-    --darker-color:#000;
+    --darker-color:rgb(0, 0, 0);
 }
 ul {
     list-style: none;
@@ -99,6 +99,7 @@ header{
     background-color: var(--ligth-color);
     height: max-content;
 }
+/* main */
 main{
     width: 1200px;
     max-width: 90%;
@@ -155,10 +156,40 @@ section{
     border: 1px solid var(--lighter-color);
     color: var(--lighter-color);
 }
+/* footer */
+.footer-wrapper{
+    padding: 55px 30px;
+    color: var(--lighter-color);
+    display: grid;
+    gap: 30px;
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+}
+footer{
+    margin-top: 80px;
+    background-color: #373A40;
+}
+footer i{
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+footer li{
+    margin-bottom: 10px;
+}
+footer button{
+    background-color: var(--ligth-color);
+    padding: 10px 25px;
+}
 /* tablet */
 @media only screen and (min-width:768px) {
     .flex-50{
         flex-direction: row;
+        align-items: center;
+    }
+    .footer-wrapper{
+        grid-template-columns: repeat(2,auto);
         align-items: center;
     }
 }
