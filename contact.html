@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="grey">
     <div class="mobile-header fix">
       <div>
         <i class="fa-solid fa-bars" id="bar"></i>
@@ -43,7 +43,7 @@
           </div>
         </li>
         <li class="bg-dark text-white px-5 py-1 rounded">
-          <a href="book.html">Book Now</a>
+          <a href="contact.html">Book Now</a>
         </li>
       </ul>
     </div>
@@ -68,78 +68,45 @@
             </div>
           </li>
           <li class="bg-dark text-white px-5 py-1 rounded">
-            <a href="contact.html">Book Now</a>
+            <a href="book.html">Book Now</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="banner-parent">
-      <div class="banner"></div>
-    </div>
+    <div style="margin-top: 200px;"></div>
     <main>
-      <article>
-        <div class="quotes">
-          <p><b><i>"Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever... It remembers little things, long after you have forgotten everything." 
-          </i></b></p>
-          <p><i>- Aaron Siskind</i></p>
+        <div class="contact-form">
+            <p class="text-center">SCHEDULE AN APPOINTMENT</p>
+            <div class="line grey-line"></div>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Your Full Name(s) *</label>
+                    <input type="text" id="fullname" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" id="phonenumber" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="date">Wedding/Shoot Date *</label>
+                    <input type="date" id="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="location">Venue/Location(s) *</label>
+                    <input type="text" id="location" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea name="message" id="message" cols="10" rows="5" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark d-block mx-auto">Send</button>
+            </form>
         </div>
-        <section>
-           <div class="flex-50">
-              <div class="img-holder">
-                <img src="image/model1.JPG" alt="Model1">
-              </div>
-              <div class="text-holder">
-                <h5>Capturing Moments: A Visual Journey Through Life</h5>
-                <p>
-                  Welcome to D’Leverage Photography
-                </p>
-                <p>At D’Leverage Photography, we specialize in capturing the essence of life's most precious moments through the lens of a camera. Whether it's your wedding day, a family reunion, a newborn's first smile, or simply the beauty of everyday life, we are passionate about creating timeless images that you will cherish forever.
-                </p>
-                <p>
-                  Our approach is both artistic and documentary, aiming to tell your unique story through stunning photographs that evoke emotion and capture the authenticity of each moment. We believe in building a connection with our clients, understanding their vision, and delivering images that exceed expectations.
-                </p>
-              </div>
-           </div>
-        </section>
-        <section>
-          <h5 class="text-end my-5"><b><i>""Moments Captured, Memories Eternal: Our Photography Services"." 
-          </i></b></h5>
-          </div>
-          <div class="flex-50">
-            <div class="text-holder">
-              <p>Wedding Photography: From intimate ceremonies to grand celebrations, we specialize in capturing every heartfelt moment of your special day.</p>
-              <p>
-                Portrait Sessions: Whether it's family portraits, senior photos, or individual portraits, we create stunning images that showcase your unique personality and style.
-              </p>
-              <p>Event Coverage: Document the energy and excitement of your events with our professional photography services, ensuring every detail is captured beautifully.
-
-              </p>
-              <p>
-              Lifestyle Photography: Capture the essence of everyday life with our lifestyle photography sessions, creating images that reflect your passions and moments of joy.
-              </p>
-            </div>
-             <div class="img-holder">
-               <img src="image/model2.JPG" alt="Model1">
-             </div>
-          </div>
-       </section>
-      </article>
     </main>
-    <article>
-      <div class="contact text-center">
-        <div class="contact-text-holder">
-          <h4>CONTACT US NOW</h4>
-          <p>
-            Ready to capture your special moments? Contact us today to discuss your photography needs and schedule a consultation. We look forward to being a part of your journey and creating lasting memories together.
-          </p>
-          <a href="contact.html">
-            <button type="button">
-              SEND A MESSAGE
-            </button>
-          </a>
-        </div>
-      </div>
-    </article>
     <footer>
       <div class="footer-wrapper">
         <div class="socials">
