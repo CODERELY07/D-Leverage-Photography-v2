@@ -27,3 +27,17 @@ const header = document.querySelectorAll(".fix");
         mobileBar.classList.add('fa-bars');
     }
 })   
+const loading = document.querySelectorAll(".img");
+loading.forEach((div) => {
+  const img = div.querySelector("img");
+
+  function loaded() {
+    div.classList.add("loaded");
+  }
+
+  if (img.complete) {
+    loaded();
+  } else {
+    img.addEventListener("load", loaded);
+  }
+});
