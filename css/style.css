@@ -350,34 +350,34 @@ footer button{
     background: rgba(255, 255, 255, 0); /* Initial background color */
     animation: pulse 2.5s infinite; /* Apply pulse animation */
   }
-  .img{
-      position: relative;
-      max-width: 300px;
-      width: 100%;
-      background-color: #ccc !important;
-  }
-  @keyframes pulse {
-      0% {
-      background-color: rgba(255, 255, 255, 0); /* Transparent */
-      }
-      50% {
-      background-color: rgba(19, 18, 18, 0.2); /* Semi-transparent white */
-      }
-      100% {
-      background-color: rgba(255, 255, 255, 0); /* Back to transparent */
-      }
-  }
-  .img.img.loaded::before{
-      content: none;
-  }
-  .img.loaded  > img{
-      opacity: 1;
-  }
-  .img > img {
-      opacity: 0;
-      transition: opacity 500ms ease-in-out;
-  }
-  
+.img{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    background-color: #ccc !important;
+}
+@keyframes pulse {
+    0% {
+    background-color: rgba(255, 255, 255, 0); /* Transparent */
+    }
+    50% {
+    background-color: rgba(19, 18, 18, 0.2); /* Semi-transparent white */
+    }
+    100% {
+    background-color: rgba(255, 255, 255, 0); /* Back to transparent */
+    }
+}
+.img.img.loaded::before{
+    content: none;
+}
+.img.loaded  > img{
+    opacity: 1;
+}
+.img > img {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
 /* tablet */
 @media only screen and (min-width:768px) {
     .flex-50{
@@ -486,6 +486,18 @@ footer button{
     }
     .mobile-menu li:last-child::after{
         background-color: transparent;
+    }
+}
+@media only screen and (max-width:600px){
+    p,
+    button,
+    li,
+    a,
+    label{
+        font-size: 14px;
+    }
+    i{
+        font-size: 18px !important;
     }
 }
 @media only screen and (max-width:400px){
